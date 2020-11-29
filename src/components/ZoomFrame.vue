@@ -100,7 +100,7 @@ export default {
       }
     });    
 
-    //Join the meeting  NOTE: if the user is not the actual host, he will be placed in the waiting room 
+    //Join the meeting
     ZoomMtg.join({
       debug: true,
       signature: this.signature,
@@ -112,8 +112,9 @@ export default {
       success: function(res) {           
         console.log("join meeting success" + res);
       },
-      error: function(res) {            
-        console.log(res);
+      error: function(res) {   
+        //TODO: better error managemet         
+        alert(res.errorMessage);
       }          
     });
   },
