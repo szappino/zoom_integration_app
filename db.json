@@ -1,0 +1,50 @@
+{
+  "votings": [
+    {
+      "id": 0,
+      "title": "test",
+      "description": "test"
+    },
+    {
+      "title": "test2wtTWE",
+      "description": "teEeeetwtre",
+      "id": 1
+    },
+    {
+      "title": "test1234",
+      "description": "test ajskljfsKLFJKAS",
+      "id": 2
+    }
+  ],
+  "user_vote": [
+    {
+      "id": 0,
+      "user": "szappino@gmail.com",
+      "vote_id": 0,
+      "result": 1
+    },
+    {
+      "user": "szappino@gmail.com",
+      "vote_id": 1,
+      "result": 1,
+      "id": 2
+    },
+    {
+      "vote_id": 1,
+      "result": 1,
+      "id": 3
+    },
+    {
+      "user": "szappino@gmail.com",
+      "vote_id": 2,
+      "result": 1,
+      "id": 4
+    },
+    {
+      "user": "CICCIO",
+      "vote_id": 2,
+      "result": 0,
+      "id": 5
+    }
+  ]
+}

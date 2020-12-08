@@ -27,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Meeting ID</label>
-                        <input v-model="zoomData.meeting_id" type="text" class="form-control" required>>
+                        <input v-model="zoomData.meeting_id" type="text" class="form-control" required>
                     </div>              
                     <div class="form-group">
                         <label for="exampleInputPassword1">Meeting Password</label>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Meeting ID</label>
-                        <input v-model="zoomData.meeting_id" type="text" class="form-control" required>>
+                        <input v-model="zoomData.meeting_id" type="text" class="form-control" required>
                     </div>                      
                     <div class="form-group">
                         <label for="password1">Meeting Password</label>
@@ -61,7 +61,7 @@
 <script>
 
 export default {
-    name: 'JoinMeeting',
+    name: 'JoinMeeting',    
 
     data: function() {
         return {
@@ -72,6 +72,10 @@ export default {
                 meeting_id: null
             },
         }
+    },
+
+    mounted: function() {
+       this.test();
     },
 
     computed:  {
@@ -87,7 +91,7 @@ export default {
 
         joinMeeting: function() {
             this.$router.push({ name: 'meeting', params: { host: false, nickname: this.zoomData.username, password: this.zoomData.password, meetingId: this.zoomData.meeting_id } })            
-        }
+        },
     }
 
 }
